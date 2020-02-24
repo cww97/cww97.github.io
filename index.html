@@ -93,16 +93,33 @@
 
     .paper-link {}
   </style>
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-50623594-1', 'auto');
-    ga('send', 'pageview');
+
+  <script src="live2d/L2Dwidget.min.js"></script>
+  <script type="text/javascript">
+    L2Dwidget.init({
+      model: {
+        jsonPath: 'live2d/tororo/assets/tororo.model.json',
+      },
+      display: {
+        superSample: 2,
+        width: 150,
+        height: 150,
+        position: 'right',
+        hOffset: 0,
+        vOffset: 0,
+      },
+      mobile: {
+        show: true,
+        scale: 1,
+        motion: true,
+      },
+      react: {
+        opacityDefault: 0.8,
+        opacityOnHover: 0.2,
+      }
+    })
   </script>
+
 </head>
 
 <body>
@@ -111,7 +128,7 @@
       <img src="./home/me_.jpg" class="img-circle img-me">
       <div class="header-text">
         <div class="header-text-name">
-          Weiwen Chen 
+          Weiwen Chen
           <span>
             <font size="-0.5">
               (Chinese: <ruby lang="zh-Hans">陈伟文</ruby>)
@@ -139,7 +156,7 @@
           <a href="https://facultyold.ecnu.edu.cn/s/3868/main.jspy" target="_blank">Bo Jin</a>.
         </div>
         <div class="vspace">
-          I'm broadly interested in computer vision and robotic arm, 
+          I'm broadly interested in computer vision and robotic arm,
           and I was a naive ACMer(regional Silver, I good vegetable).
         </div>
       </div>
@@ -175,9 +192,9 @@
               <u>Weiwen Chen</u>,
               <a href="https://github.com/TonyDanidXHY">Hongyi Xu</a>
             </div>
-            <div>A fack search Engine(data from NetEase cloud music) for top300 musicians(each 50 songs). 
-              Building reverse index by Elastic Search, it draws a wordcloud for each musician. 
-              At last it classifies musicians into 10 classes with Kmeans, train a RNN model from each class. 
+            <div>A fack search Engine(data from NetEase cloud music) for top300 musicians(each 50 songs).
+              Building reverse index by Elastic Search, it draws a wordcloud for each musician.
+              At last it classifies musicians into 10 classes with Kmeans, train a RNN model from each class.
               Starting with one Chiese character, the models can write different sytles of song lyrics.
             </div>
             <div>
@@ -195,14 +212,15 @@
               BlackBlank
             </div>
             <div class="paper-authors">
-              <a href="https://github.com/Cardinal2376/">Zhijie Cao</a> , 
+              <a href="https://github.com/Cardinal2376/">Zhijie Cao</a> ,
               Yijun Wang,
               <u>Weiwen Chen</u>
               Yu Gen,
               Changjia Chen
             </div>
             <div>
-              An algorithm visualization tool on web, purposed to help users to construct a display of an algorithm quickly.
+              An algorithm visualization tool on web, purposed to help users to construct a display of an algorithm
+              quickly.
               <br>
               Shanghai innovation and entrepreneurship project, Result: Excellent.
             </div>
@@ -226,7 +244,8 @@
             </div>
             <div>
               A news publication platform which users can create something new or derive something from others.
-              Tech stack: Django, Semantic UI, Editor.markdown, MongoDB. Planning to storage the data on blockchain(Ethereum).
+              Tech stack: Django, Semantic UI, Editor.markdown, MongoDB. Planning to storage the data on
+              blockchain(Ethereum).
               <br>
               Phd Intern in HKBUdb, 2018 Summer
             </div>
@@ -243,11 +262,11 @@
             </div>
             <div class="paper-authors">
               <u>Weiwen Chen</u>,
-              <a href="https://github.com/Cardinal2376/">Zhijie Cao</a>, 
+              <a href="https://github.com/Cardinal2376/">Zhijie Cao</a>,
               Zhu XuLiang
             </div>
             <div>
-              Code Library during ACM career. We got ccpc & icpc regional Silver in 2017, 
+              Code Library during ACM career. We got ccpc & icpc regional Silver in 2017,
               and Xuliang Zhu got Golden in 2018's ecl-final, with her girlfriend :)
             </div>
             <div>
@@ -256,8 +275,8 @@
             </div>
           </div>
         </div>
-        
-<!--
+
+        <!--
         <h1>Publications</h1>
         <div class="row vspace-top">
           <div class="col-xs-3 text-center">
